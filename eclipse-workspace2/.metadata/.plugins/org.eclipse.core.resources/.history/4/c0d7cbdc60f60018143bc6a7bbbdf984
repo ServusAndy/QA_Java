@@ -1,0 +1,6 @@
+
+public class Model {
+	public static <T> boolean contains(ArrayList<T> arr,T data){
+		
+	}
+}

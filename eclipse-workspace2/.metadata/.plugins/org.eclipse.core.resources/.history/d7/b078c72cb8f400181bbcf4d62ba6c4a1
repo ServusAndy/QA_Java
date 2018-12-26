@@ -1,0 +1,18 @@
+package appl;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+import item.Card;
+
+public class CardTest {
+
+	public static void main(String[] args) {
+		ArrayList<Card> deck = new ArrayList<>();
+		for(int i = 0 ;i < 52;i++)deck.add(new Card(i));
+		Collections.shuffle(deck);
+		deck.forEach(System.out::println);
+
+	}
+
+}

@@ -1,0 +1,8 @@
+1541696512747	Delete element
+1541703920823	Extract method 'extracted'
+1541703972836	Delete element
+1541704184973	Convert local variable 'year' to field
+1541704213191	Convert local variable 'price' to field
+1541704256146	Convert local variable 'pictures' to field
+1541704266123	Convert local variable 'title' to field
+1541704269425	Convert local variable 'author' to field

@@ -1,0 +1,13 @@
+package com.telran.logic;
+
+import com.telran.data.Person;
+
+public class Company {
+	private String name;
+	private Person[] persons;
+	
+	public Company(String name, int capacity) {
+		this.name = name;
+		persons = new Person[capacity];
+	}
+}

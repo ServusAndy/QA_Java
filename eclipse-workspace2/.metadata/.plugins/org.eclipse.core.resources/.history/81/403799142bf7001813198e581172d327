@@ -1,0 +1,27 @@
+import java.util.HashSet;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("Vasya".hashCode());
+		
+		HashSet<String> names = new HashSet<>();
+		names.add("Vasya");
+		names.add("Petya");
+		names.add("Sofa");
+		
+		for(String str:names) {
+			
+		}
+		
+		HashSet<Person> persons = new HashSet<>();
+		persons.add(new Person("Petya",1111));
+		persons.add(new Person("Petya",2222));
+		persons.add(new Person("Vasya",3333));
+		persons.add(new Person("Vasya",4444));
+		
+		
+
+	}
+
+}

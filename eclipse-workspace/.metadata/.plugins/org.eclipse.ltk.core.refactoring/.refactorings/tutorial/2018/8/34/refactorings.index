@@ -1,0 +1,6 @@
+1535118961540	Convert local variable 'a' to field
+1535120287182	Rename type 'testClass'
+1535120492374	Encapsulate field 'b'
+1535120500120	Encapsulate field 'a'
+1535121312387	Encapsulate field 'c'
+1535122182924	Encapsulate field 'a'

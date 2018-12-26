@@ -1,0 +1,7 @@
+1534247795873	Encapsulate field 'capacity'
+1534263530986	Convert local variable 'library' to field
+1534264398360	Encapsulate field 'addCapcity'
+1534276651530	Infer generic type arguments
+1534404734597	Extract local variable 'b2'
+1534404756115	Inline local variable 'b2'
+1534405765519	Delete element

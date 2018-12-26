@@ -1,0 +1,30 @@
+package test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+class ContainsTest {
+	static ArrayList<Integer> ali;
+	static Random gen = new Random();
+	static final int NUM_NUM = 1000000;
+
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
+		ali = new ArrayList();
+		for(int i =0;i<NUM_NUM;i++) {
+			ali.add(gen.nextInt());
+		}
+	}
+
+	@Test
+	void test() {
+		int num = gen.nextInt();
+		assertTrue(Model.contains(ali,num)==ali.contains(num));
+	}
+
+}

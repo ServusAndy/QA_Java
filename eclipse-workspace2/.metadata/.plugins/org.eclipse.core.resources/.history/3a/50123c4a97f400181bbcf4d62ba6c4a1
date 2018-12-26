@@ -1,0 +1,13 @@
+package appl;
+
+import item.Book;
+
+public class BookTest {
+
+	public static void main(String[] args) {
+		Book b = new Book("J.R.Tolkien","LordOfTheRing",489,860.,true);
+		Book b1 = new Book("J.R.Tolkien","LordOfTheRing",488,860.,true);
+		System.out.println(b.equals(b1));
+	}
+
+}

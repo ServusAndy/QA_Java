@@ -1,0 +1,26 @@
+package test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import dto.Address;
+import dto.Person;
+
+class EquelsTest {
+	
+	static Person p1;
+	static Person p2;
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
+		p1 = new Person("Sasha",61,76.5,true,new Address());
+		p2 =new Person("Sasha",61,76.5,true,new Address());
+	}
+
+	@Test
+	void test() {
+		assertTrue(p1.equals(p2));
+	}
+
+}

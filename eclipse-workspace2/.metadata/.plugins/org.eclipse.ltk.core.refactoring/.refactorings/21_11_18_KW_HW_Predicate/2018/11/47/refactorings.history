@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;randomLib&apos; to &apos;21_11_18_QA_BubbleSortWithComparator/src&apos;&#x0A;- Original project: &apos;21_11_18_KW_HW_Predicate&apos;&#x0A;- Destination element: &apos;21_11_18_QA_BubbleSortWithComparator/src&apos;&#x0A;- Original element: &apos;21_11_18_KW_HW_Predicate/src/randomLib&apos;" description="Copy package" destination="=21_11_18_QA_BubbleSortWithComparator/src" element1="/src&lt;randomLib" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1542820937268" version="1.0"/>
+</session>

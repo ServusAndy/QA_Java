@@ -1,0 +1,12 @@
+package model;
+
+public class OurLinkedList<T> {
+	
+	private Node<T> head = null;
+	private Node<T> tail = null;
+	private int size = 0;
+	
+	public void add(T data) {
+		
+	}
+}

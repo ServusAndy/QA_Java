@@ -1,0 +1,36 @@
+package com.telran.log;
+
+import com.telran.dat.Bike;
+import com.telran.dat.Car;
+import com.telran.dat.Owner;
+import com.telran.im.Shop;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Car car1 = new Car(42200, "V800", "Volvo", "552-888",true);
+		Car car2 = new Car(38100, "T303", "Toyota", "558-777",true);
+		Car car3 = new Car(31150, "F100", "Fiat", "556-333", false);
+	
+		Owner owner1 = new Owner("Boris Becker", 49, "3456", "Akko", "053-666-999");
+		Owner owner2 = new Owner("Ivan Konuh.", 30, "4488", "Tel Aviv", "054-111-333");
+		Owner owner3 = new Owner("Luba Pipec", 28, "6699", "Haifa", "053-222-444");
+		Owner owner4 = new Owner("Rust Cohle", 48, "5566", " New Mexico", "053-609-447");
+		
+		
+		Shop sh = new Shop(10);
+		
+		sh.add(car1);
+		sh.add(car2);
+		sh.add(car3);
+		
+		sh.sale(car3, owner1);
+		sh.printAll();
+		System.out.println("--------------------------------------");
+		
+		sh.printSoldTransport();
+
+	}
+
+}

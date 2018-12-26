@@ -1,0 +1,18 @@
+import java.util.LinkedList;
+
+public class LinkedListTest {
+
+	public static void main(String[] args) {
+		LinkedList<String> cats = new LinkedList<>();
+		
+		System.out.println(cats.isEmpty());
+		cats.add("Pisun");
+		System.out.println(cats.isEmpty());
+		cats.forEach(System.out::println);
+		cats.addFirst("Galya");
+		cats.forEach(System.out::println);
+		cats.removeFirst();
+		cats.forEach(System.out::println);
+	}
+
+}

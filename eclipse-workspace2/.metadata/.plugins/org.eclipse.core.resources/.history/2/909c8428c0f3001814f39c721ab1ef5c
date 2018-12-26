@@ -1,0 +1,31 @@
+package appl;
+
+import java.util.Arrays;
+
+import item.Cats;
+
+public class CatsTest {
+
+	public static void main(String[] args) {
+		Cats c1 = new Cats(1111,"Vasya",2);
+		Cats c2 = new Cats(1112,"Murzik",3);
+		Cats c3 = new Cats(1114,"Masha",1);
+		Cats c4 = new Cats(1113,"Pusik",4);
+		Cats c5 = new Cats(1118,"Ykov Borisovich",9);
+		
+		Cats[] cats = {c1,c2,c3,c4,c5};
+		//System.out.println(cats);
+		//System.out.println(Arrays.toString(cats));
+		dysplay(cats);
+		
+		
+	}
+
+	private static void dysplay(Cats[] cats) {
+		for(Cats cat: cats) {
+			System.out.println(cat);
+		}
+		System.out.println("====================================");
+	}
+
+}

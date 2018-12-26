@@ -1,0 +1,63 @@
+package com.telran.logic;
+
+import com.telran.data.Person;
+
+public class Company {
+	private String name;
+	private Person[] persons;
+
+	public Company(String name, int capacity) {
+		this.name = name;
+		persons = new Person[capacity];
+	}
+
+	public void add(Person p) {
+		if (p instanceof Person) {
+			for (int i = 0; i < persons.length; i++) {
+				if (persons[i] == null) {
+					persons[i] = p;
+					break;
+				}
+				if (p.equals(persons[i])) {
+					break;
+				}
+			}
+		} // add person to array if not exist
+	}
+
+	public void remove(Person p) {
+		if (p instanceof Person) {
+			for (int i = 0; i < persons.length; i++) {
+				if (persons[i] == p) {
+					persons[i] = null;
+					break;
+				}
+			}
+		} // remove person from array if exist
+	}
+
+	public void remove(String id) {
+		for (int i = 0; i < persons.length; i++) {
+			/*if (persons[i] == id) {
+				persons[i] = null;
+				break;
+			}*/
+		}
+		// remove person from array if exist
+	}
+
+	public void display() {
+		System.out.println("Company: " + name);// print all persons + total persons salary
+		for (int i = 0; i < persons.length; i++) {
+			System.out.println("	" + persons[i]);
+		}
+
+		System.out.println("Total salary: ");
+	}
+
+	public void display(String type) {
+		System.out.println("Company: " + name);
+		
+		System.out.println("Total salary: ");
+	}
+}

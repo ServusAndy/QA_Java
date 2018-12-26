@@ -1,0 +1,29 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import Model.OurArrayList;
+
+class OurArrayListTests {
+
+	@Test
+	void indexOfTest1() {
+		//1.определение,иницилизация
+		OurArrayList<String> list = new OurArrayList<>();
+		list.add("Vasya");
+		list.add("bbbb");
+		list.add("ffgbbgdb");
+		list.add("fdfcfr");
+		list.add("ooobbb");
+		
+		String findStr = "bbbb";
+		int expected = 1;
+		
+		//2.action выполнение действия 
+		int res = list.indexOf(findStr);
+		
+		//3. assert сравнение
+		assertTrue(expected,res);
+	}
+
+}

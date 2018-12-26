@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+public class Model {
+	
+	public static <T> boolean contains(ArrayList<T> arr,T data){
+		for(T t:arr) {
+			if(t.equals(data))return true;
+		}
+		return false;
+	}
+}

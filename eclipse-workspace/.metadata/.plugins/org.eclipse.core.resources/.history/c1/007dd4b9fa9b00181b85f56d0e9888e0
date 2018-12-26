@@ -1,0 +1,29 @@
+package com.telran.logic;
+
+import com.telran.data.Person;
+
+public class Company {
+	private String name;
+	private Person[] persons;
+	
+	public Company(String name, int capacity) {
+		this.name = name;
+		persons = new Person[capacity];
+	}
+	
+	public void add(Person p) {
+		//add person to array if not exist
+	}
+	
+	public void remove(Person p) {
+		// remove person from array if exist
+	}
+	
+	public void remove(String id) {
+		// remove person from array if exist id
+	}
+	
+	public void display() {
+		//print all persons + total persons salary
+	}
+}

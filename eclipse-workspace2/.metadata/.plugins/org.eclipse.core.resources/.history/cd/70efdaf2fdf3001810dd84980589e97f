@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> myList = new ArrayList<>();
+		boolean res = myList.add("Vasya");
+		myList.add(0, "Petay");
+		
+		String str = myList.get(1);
+		System.out.println(str);
+		
+		str = myList.set(0, "Sofa");
+		System.out.println(str);
+		
+		res = myList.remove("Sofa");
+		System.out.println(res);
+		
+		str = myList.remove(0);
+		System.out.println(str);
+		
+		int count = myList.size();
+		System.out.println(count);
+		
+		res = myList.isEmpty();
+		System.out.println(res);
+		
+		for(int i = 0;i<100;i++) {
+			myList.add("Name " + (i%10));
+		}
+		
+		int index = myList.indexOf("Name 9");
+		System.out.println(index);
+		
+		index = myList.lastIndexOf("Name 9");
+		System.out.println(index);
+		
+		index = myList.IndexOf("haaa");
+		System.out.println(index);
+	}
+
+}

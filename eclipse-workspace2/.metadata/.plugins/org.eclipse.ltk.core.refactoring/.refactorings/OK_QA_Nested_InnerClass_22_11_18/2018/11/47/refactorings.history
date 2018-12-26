@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;NestedClass&apos; to &apos;First&apos;&#x0A;- Original project: &apos;OK_QA_Nested_InnerClass_22_11_18&apos;&#x0A;- Original element: &apos;NestedClass&apos;&#x0A;- Renamed element: &apos;First&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;NestedClass&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{NestedClass.java[NestedClass" matchStrategy="1" name="First" qualified="false" references="true" similarDeclarations="false" stamp="1542892956629" textual="false" version="1.0"/>
+</session>

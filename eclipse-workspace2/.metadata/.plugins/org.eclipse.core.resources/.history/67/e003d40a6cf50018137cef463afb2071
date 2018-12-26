@@ -1,0 +1,23 @@
+package test;
+
+import java.util.UUID;
+
+import randomLib.RandomLibraryException;
+import telran.person.dao.PersonManager;
+import telran.person.model.Person;
+
+public class PersonTest {
+	public static int PERSON_MNG = 10;
+	
+	public static void main(String[] args) throws RandomLibraryException {
+//		PersonManager pm = new PersonManager();
+//		Person p = new Person();
+//		for(int i = 0 ;i<PERSON_MNG;i++) {
+//			pm.add(p.getRandomPerson());
+//		}
+		int uniqueID = Integer.parseInt(UUID.randomUUID().toString());
+		System.out.println(uniqueID);
+
+	}
+
+}

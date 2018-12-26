@@ -1,0 +1,120 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import Model.OurArrayList;
+
+class OurArrayListTests {
+
+	@Test
+	void indexOfTest1() {
+		//1.определение,иницилизация
+		OurArrayList<String> list = new OurArrayList<>();
+		list.add("Vasya");
+		list.add("bbbb");
+		list.add("ffgbbgdb");
+		list.add("fdfcfr");
+		list.add("ooobbb");
+		
+		String findStr = "bbbb";
+		int expected = 1;
+		
+		//2.action выполнение действия 
+		int res = list.indexOf(findStr);
+		
+		//3. assert сравнение
+		assertTrue(expected==res);
+	}
+	@Test
+	void indexOfTest2() {
+		//1.определение,иницилизация
+		OurArrayList<String> list = new OurArrayList<>();
+		list.add("Vasya");
+		
+		
+		String findStr = "Vasya";
+		int expected = 0;
+		
+		//2.action выполнение действия 
+		int res = list.indexOf(findStr);
+		
+		//3. assert сравнение
+		assertTrue(expected==res);
+	}
+	
+	@Test
+	void indexOfTest3() {
+		//1.определение,иницилизация
+		OurArrayList<String> list = new OurArrayList<>();
+		list.add("Vasya");
+		
+		
+		String findStr = null;
+		int expected = -1;
+		
+		//2.action выполнение действия 
+		int res = list.indexOf(findStr);
+		
+		//3. assert сравнение
+		assertTrue(expected==res);
+	}
+	
+	@Test
+	void indexOfTest4() {
+		//1.определение,иницилизация
+		OurArrayList<String> list = new OurArrayList<>();
+		list.add("Vasya");
+		list.add("Vasya");
+		list.add("Vasya");
+		String findStr ="Vasya";
+		int expected = 0;
+		
+		//2.action выполнение действия 
+		int res = list.indexOf(findStr);
+		
+		//3. assert сравнение
+		assertTrue(expected==res);
+	}
+	
+	@Test
+	void sizeTest1() {
+		OurArrayList<String> list = new OurArrayList<>();
+		list.add("Vasya");
+		list.add("Va");
+		list.add("ya");
+		list.add("Vsya");
+		
+		int expected = 4;
+		
+		int res = list.size();
+		
+		assertTrue(expected==res);
+	}
+	
+	@Test
+	void sizeTest2() {
+		OurArrayList<String> list = new OurArrayList<>();
+		list.add("Vasya");
+		list.add("Va");
+		list.add("ya");
+		list.add(null);
+		
+		int expected = 3;
+		
+		int res = list.size();
+		
+		assertTrue(expected==res);
+	}
+	
+	@Test
+	void sizeTest3() {
+		OurArrayList<String> list = new OurArrayList<>();
+		
+		int expected = 0;
+		
+		int res = list.size();
+		
+		assertTrue(expected==res);
+	}
+
+}

@@ -1,0 +1,37 @@
+package appl;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+import item.Card;
+
+public class CardTest {
+
+	public static void main(String[] args) {
+		ArrayList<Card> deck = new ArrayList<>();
+		for(int i = 0 ;i < 52;i++)deck.add(new Card(i));
+		Collections.shuffle(deck);
+		
+		ArrayList<Card> player1 = new ArrayList<>();
+		ArrayList<Card> player2 = new ArrayList<>();
+		ArrayList<Card> player3 = new ArrayList<>();
+		ArrayList<Card> player4 = new ArrayList<>();
+		for(int i = 0 ;i < 52;i=i+4) {
+			player1.add(deck.get(i));
+			player2.add(deck.get(i+1));
+			player3.add(deck.get(i+2));
+			player4.add(deck.get(i+3));
+		}
+		
+		Collections.sort(player1);
+		Collections.sort(player2);
+		Collections.sort(player3);
+		Collections.sort(player4);
+		
+		  for(int i = 0 ;i <13;i++) {
+				System.out.println(player1.get(i)+"\t"+player2.get(i)+"\t"+player3.get(i)+"\t"+player4.get(i));
+			}
+
+	}
+
+}

@@ -1,0 +1,32 @@
+package dto;
+
+public class Address {
+   private String s;
+
+
+
+public Address(String s) {
+	super();
+	this.s = s;
+}
+
+
+
+@Override
+public boolean equals(Object obj) {
+	if (this == obj)
+		return true;
+	if (obj == null)
+		return false;
+	if (getClass() != obj.getClass())
+		return false;
+	Address other = (Address) obj;
+	if (s == null) {
+		if (other.s != null)
+			return false;
+	} else if (!s.equals(other.s))
+		return false;
+	return true;
+}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;11_11_18_VisibielityModifier&apos; to &apos;11_11_18_VisibilityModifiers&apos;&#x0A;- Original element: &apos;11_11_18_VisibielityModifier&apos;&#x0A;- Renamed element: &apos;11_11_18_VisibielityModifier&apos;&#x0A;- Update references to refactored element" description="Rename Java project &apos;11_11_18_VisibielityModifier&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=11_11_18_VisibielityModifier" name="11_11_18_VisibilityModifiers" references="true" stamp="1541957349791" version="1.0"/>
+</session>

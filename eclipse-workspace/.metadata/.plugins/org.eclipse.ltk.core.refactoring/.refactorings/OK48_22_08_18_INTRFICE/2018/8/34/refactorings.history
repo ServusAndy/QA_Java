@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;IChirik&apos; to &apos;IChirikable&apos;&#x0A;- Original project: &apos;OK48_22_08_18_INTRFICE&apos;&#x0A;- Original element: &apos;IChirik&apos;&#x0A;- Renamed element: &apos;IChirikable&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;IChirik&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{IChirik.java[IChirik" matchStrategy="1" name="IChirikable" qualified="false" references="true" similarDeclarations="false" stamp="1534958571892" textual="false" version="1.0"/>
+</session>

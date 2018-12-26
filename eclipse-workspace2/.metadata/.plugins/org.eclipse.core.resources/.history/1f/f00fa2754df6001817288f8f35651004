@@ -1,0 +1,20 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.ArrayList;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+class SortTest {
+
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
+		ArrayList<Integer> ali = new ArrayList<>();
+	}
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,28 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.function.Predicate;
+import filter.model.integer.FilterModel;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+
+class IntegerFilterTest {
+	
+	private static final int NUM_NUM = 20;
+	static Random gen = new Random(123456789);
+	static ArrayList<Integer> ali;
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
+		 ali = new ArrayList<>();
+		for(int i = 0 ; i<NUM_NUM;i++)ali.add(100 + gen.nextInt(900));
+	}
+
+	@Test
+	void test() {
+	  
+	}
+	
+}

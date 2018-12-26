@@ -1,0 +1,14 @@
+
+
+import java.util.ArrayList;
+import java.util.function.Predicate;
+
+public class FilterModel {
+	private static ArrayList<Integer> filter(ArrayList<Integer> ali,Predicate<Integer> predicate) {
+		ArrayList<Integer> res = new ArrayList<>();
+		for(Integer i : ali) {
+			if(predicate.test(i))res.add(i);
+		}
+		return res;
+	}
+}

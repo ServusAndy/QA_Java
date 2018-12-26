@@ -1,0 +1,28 @@
+package test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.Random;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import model.OurLinkedList;
+
+class SizeTest {
+	
+	static OurLinkedList<Integer> olli;
+	static final int toTail = 5000;
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
+		olli = new OurLinkedList<>();
+		Random gen = new Random();
+		
+	}
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

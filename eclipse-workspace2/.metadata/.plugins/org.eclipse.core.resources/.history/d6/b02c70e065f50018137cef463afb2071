@@ -1,0 +1,7 @@
+package telran.person.interfaces;
+
+import telran.person.model.Person;
+
+public interface IManager {
+	public void add(Person p);
+}

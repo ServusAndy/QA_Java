@@ -1,0 +1,8 @@
+package model;
+
+public class OurLinkedList {
+	
+	Node<T> head = null;
+	Node<T> tail = null;
+	int size = 0;
+}

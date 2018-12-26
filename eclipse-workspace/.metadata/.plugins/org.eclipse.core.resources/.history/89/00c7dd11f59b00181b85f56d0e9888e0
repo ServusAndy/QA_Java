@@ -1,0 +1,10 @@
+package com.telran.data;
+
+public class TestPerson {
+
+	public static void main(String[] args) {
+		Person p = new Person("Petya",25);
+
+	}
+
+}

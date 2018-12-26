@@ -1,0 +1,15 @@
+package tfilter;
+
+
+import java.util.ArrayList;
+import java.util.function.Predicate;
+
+public class FilterModel {
+	public static <T> ArrayList<Integer> filter(ArrayList<T> orig, Predicate<T> predicate){
+		ArrayList<Integer> result = new ArrayList<>();
+		for(T t : orig) {
+			if(predicate.test(t)) result.add((Integer) t);
+		}
+		return result;
+	}
+}

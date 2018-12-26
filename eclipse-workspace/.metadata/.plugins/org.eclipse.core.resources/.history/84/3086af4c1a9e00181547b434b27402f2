@@ -1,0 +1,98 @@
+package com.telran.logic;
+
+import com.telran.data.Employee;
+import com.telran.data.Manager;
+import com.telran.data.Person;
+import com.telran.data.WageEmployee;
+
+public class Company {
+	private String name;
+	private Person[] persons;
+
+	public Company(String name, int capacity) {
+		this.name = name;
+		persons = new Person[capacity];
+	}
+
+	public void add(Person p) {// add person to array if not exist
+		if (p instanceof Person) {
+			for (int i = 0; i < persons.length; i++) {
+				if (persons[i] == null) {
+					persons[i] = p;
+					break;
+				}
+				if (p.equals(persons[i])) {
+					break;
+				}
+				if (persons[i] == null) {
+					break;
+				}
+			}
+		}
+	}
+
+	public void remove(Person p) { // remove person from array if exist
+		if (p instanceof Person) {
+			for (int i = 0; i < persons.length; i++) {
+				if (persons[i] == p) {
+					persons[i] = null;
+					break;
+				}
+			}
+		}
+	}
+
+	public void remove(String id) {// remove person from array if exist (id)
+		for (int i = 0; i < persons.length; i++) {
+			if (persons[i] != null && id.equals(persons[i].getId())) {
+				persons[i] = null;
+				break;
+			}
+		}
+
+	}
+
+	public void display() {
+		double salary = 0;
+		System.out.println("Company: " + name);// print all persons + total persons salary
+		for (int i = 0; i < persons.length; i++) {
+			Person p = persons[i];
+			if (p instanceof Person) {
+
+				System.out.println("	" + p);
+			}
+		}
+		System.out.println("Total salary: " + salary);
+	}
+
+	public void display(String type) {
+		double salary = 0;
+
+		System.out.println("Company: " + name);
+		for (int i = 0; i < persons.length; i++) {
+			if (type == "Manager") {
+				Person p = persons[i];
+				if (p instanceof Manager) {
+					salary = (((Manager) p).getSalary());
+					System.out.println("	" + p);
+				}
+			}
+			if (type == "Employee") {
+				Person p = persons[i];
+				if (p instanceof Employee) {
+					salary = ((Employee) p).getSalary();
+					System.out.println("	" + p);
+				}
+			}
+			if (type == "WageEmployee") {
+				Person p = persons[i];
+				if (p instanceof WageEmployee) {
+					salary = ((WageEmployee) p).getSalary();
+					System.out.println("	" + p);
+				}
+			}
+		}
+		System.out.println("Total salary: " + salary);
+	}
+
+}

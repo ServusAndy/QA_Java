@@ -1,0 +1,69 @@
+package item;
+
+public class Book {
+	private String title;
+	private int pages;// sort po pages
+	private double weight;
+	private boolean cover;
+	
+	
+	public Book() {}
+
+
+	public Book(String title, int pages, double weight, boolean cover) {
+		this.title = title;
+		this.pages = pages;
+		this.weight = weight;
+		this.cover = cover;
+	}
+
+
+	public String getTitle() {
+		return title;
+	}
+
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+
+	public int getPages() {
+		return pages;
+	}
+
+
+	public void setPages(int pages) {
+		this.pages = pages;
+	}
+
+
+	public double getWeight() {
+		return weight;
+	}
+
+
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+
+
+	public boolean isCover() {
+		return cover;
+	}
+
+
+	public void setCover(boolean cover) {
+		this.cover = cover;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Title:" + title + " Pages: " + pages + " Weight: " + weight + " Cover: " + cover;
+	}
+	
+	
+	
+	
+}

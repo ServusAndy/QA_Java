@@ -1,0 +1,5 @@
+package telran.person.interfaces;
+
+public interface IManager {
+
+}

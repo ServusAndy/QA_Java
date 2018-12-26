@@ -1,0 +1,19 @@
+package interfaces;
+
+import java.util.function.Predicate;
+
+
+public class EvenPredicate implements Predicate<Integer>{
+
+int num;
+	
+	public EvenPredicate(int num) {
+		this.num = num;
+	}
+	@Override
+	public boolean test(Integer i) {
+	
+		return i%2==0;
+	}
+
+}
