@@ -1,0 +1,16 @@
+import java.util.function.BiFunction;
+
+public class TestFP {
+
+	public static void main(String[] args) {
+		BiFunction<Integer, Integer, Integer> sum = (a,b)->a+b;
+		MyInterFace sum1 = (a,b)->a+b;
+		
+
+	}
+	
+	interface MyInterFace{ //anonym interface
+		int run(int a,int b);
+	}
+
+}

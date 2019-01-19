@@ -1,0 +1,23 @@
+boolean isPalindron(String str) = ZB: Madam im Adam(Palindrom)
+
+trim() // metod from String , uberaet probeli vokrug stroki(ignoriruet ih)
+
+
+
+HW: 
+1)
+
+implements: boolean Substring(String str,String str1)// kto is nich koroche ili dlinee
+
+2)
+
+int countWords(String str,String word)// skolko odinakovih raz strechautsa word
+
+3) 
+
+(compareTo(String other)) //stroka sravnivaetsa s drugoy , kto bolsche!!!
+
+
+4)*
+
+implement: bubble sort for String[] 

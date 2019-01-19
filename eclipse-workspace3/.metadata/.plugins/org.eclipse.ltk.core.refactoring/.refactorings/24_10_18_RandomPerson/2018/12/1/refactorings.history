@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;randomLib&apos; to &apos;31_12_18_HW_Person_TreeMap/src&apos;&#x0A;- Original project: &apos;24_10_18_RandomPerson&apos;&#x0A;- Destination element: &apos;31_12_18_HW_Person_TreeMap/src&apos;&#x0A;- Original element: &apos;24_10_18_RandomPerson/src/randomLib&apos;" description="Copy package" destination="=31_12_18_HW_Person_TreeMap/src" element1="/src&lt;randomLib" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1546260373529" version="1.0"/>
+</session>

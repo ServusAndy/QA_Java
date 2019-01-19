@@ -1,0 +1,34 @@
+21_11_18
+
+Comparator
+
+Collection java
+===================================================================
+HW:
+ rand -100 do 100
+1) otsortirovat po ubivaniu
+
+2) sort (sort odd first, then even))
+
+*3) sort po kolichestvu deliteley!!!!  
+=================================================================
+
+
+4)Class Tiger{
+private String name;
+private int numberOfStripers;
+private double weigth;
+private boolean manEater; //eat or not eat peaple!
+}
+
+impl method getRandomToger();
+
+(
+1. create 100 tigers in ArrayList
+2. sort by name
+3.sort by Stripers
+4.sort by weight
+5.filter manEater=false; // tech kto ne est cheloveka//Predicate
+)
+
+

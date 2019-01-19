@@ -1,0 +1,18 @@
+package appl;
+
+import java.time.Month;
+
+import item.MyCalendar;
+
+public class CalendarApp {
+
+	public static void main(String[] args) {
+		MyCalendar.toConsole(2019);
+		
+		 Month[] m = Month.values();
+   	  for(int i = 0;i<m.length;i++) {
+   		  System.out.println(m[i].maxLength());
+   	  }
+	}
+
+}

@@ -1,0 +1,21 @@
+import java.util.Map;
+import java.util.TreeMap;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Map<String,Integer> months = new TreeMap<>();
+		fillmap(months);
+		System.out.println(months);
+		
+
+	}
+
+	private static void fillmap(Map<String, Integer> months) {
+		months.put("Jan", 1);
+		months.put("Feb", 2);
+		months.put("Mar", 3);
+		months.put("Apr", 4);
+	}
+
+}

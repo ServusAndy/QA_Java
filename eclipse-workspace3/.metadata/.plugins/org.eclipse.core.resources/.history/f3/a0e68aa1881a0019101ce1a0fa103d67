@@ -1,0 +1,25 @@
+import java.util.Objects;
+import java.util.function.Predicate;
+
+public class TestPhoneBook {
+
+	public static void main(String[] args) {
+		
+		PhoneBook fb = new PhoneBook();
+		
+		Iterable<Contact> itr = fb.find(whithName("Alex"));
+		itr = fb.find(olderThen(24));
+		itr = fb.find(whithName("Alex").and(olderThen(24)));
+		
+		
+
+	}
+	
+	public static Predicate<Contact> whithName(String name){
+		return contact-> Objects.equals(name, contact.getName());
+	}
+	
+	public static Predicate<Contact> olderThen(int age){
+		return contact-> contact.getAge()>=age;
+	}
+}

@@ -1,0 +1,20 @@
+import java.util.TreeSet;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		TreeSet<Integer> tsi = new TreeSet<>();
+		tsi.add(1);
+		tsi.add(4);
+		tsi.add(6);
+		tsi.add(2);
+		tsi.add(8);
+		tsi.add(3);
+		System.out.println(tsi);
+		
+		
+
+	}
+
+}

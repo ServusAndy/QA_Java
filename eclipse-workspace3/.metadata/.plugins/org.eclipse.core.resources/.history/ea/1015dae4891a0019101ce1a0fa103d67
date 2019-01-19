@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+public class TestPhoneBook {
+
+	public static void main(String[] args) {
+		
+		//Function<String, Predicate<Contact> > withName = name->contact->contact.getName().equals(name);
+		
+		PhoneBook fb = new PhoneBook();
+		
+		Iterable<Contact> itr = fb.find(whithName("Alex"));
+		itr = fb.find(olderThen(24));
+		itr = fb.find(whithName("Alex").and(olderThen(24)));
+		itr = fb.find(whithName("Alex").negate().and(olderThen(34)));// vse NE Alex starsche 34;
+		
+		List<String> list = new ArrayList<>();
+		fb.find(whithName("Alex"),contact->contact.getCity(),list); //OR :	fb.find(whithName("Alex"),Contact::getCity,list);
+	
+		
+
+	}
+	
+	public static Predicate<Contact> whithName(String name){
+		return contact-> Objects.equals(name, contact.getName());
+	}
+	
+	public static Predicate<Contact> olderThen(int age){
+		return contact-> contact.getAge()>=age;
+	}
+}

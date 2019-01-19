@@ -1,0 +1,11 @@
+
+public class FuncProg {
+
+	public static void main(String[] args) {
+		//lambda: (параметры) -> {тело метода}  ||    параметры -> одно условие метода ({}не нужно)
+		
+		
+
+	}
+
+}

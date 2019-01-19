@@ -1,0 +1,18 @@
+28_11_18
+
+Comparable & Comparator  
+
+Lyamda
+
+HW:
+
+class Book(){
+private String title;
+private int pages;*// sort po pages
+double weight;
+boolean owner;
+}
+
+* Card implements Comporable<Card>
+
+** compareTo(Integer i) kriticheskie tochki

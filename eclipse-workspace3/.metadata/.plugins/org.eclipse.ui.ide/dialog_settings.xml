@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/home/andi/Documents/QA/2019-01-13 CalendarInHebrew"/>
+		<item value="/home/andi/eclipse-workspace2/HW_PersonConsoleInput"/>
+		<item value="/home/andi/Documents/QA/2019-01-02 TreeSetSub"/>
+		<item value="/home/andi/eclipse-workspace2/2018-07-19 TreeSetAdvanced"/>
+		<item value="/home/andi/eclipse-workspace2/BankProject"/>
+		<item value="/home/andi/eclipse-workspace/24_10_18_RandomPerson"/>
+		<item value="/home/andi/eclipse-workspace2/21_11_18_KW_HW_Predicate"/>
+		<item value="/home/andi/eclipse-workspace2/05_12_18_QA_MyLinkedList"/>
+		<item value="/home/andi/Documents/BP48_JAVA/Java_3_Haifa_03_12_18_CW-20181205T103531Z-001/Java_3_Haifa_03_12_18_CW"/>
+		<item value="/home/andi/Documents/BP48_JAVA/Java_3_Haifa_03_12_18_HW-20181205T103241Z-001/Java_3_Haifa_03_12_18_HW"/>
+	</list>
+	<section name="NewWizardAction">
+	</section>
+</section>

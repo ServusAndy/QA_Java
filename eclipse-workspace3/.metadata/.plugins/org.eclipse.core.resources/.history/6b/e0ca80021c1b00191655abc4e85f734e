@@ -1,0 +1,21 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.BinaryOperator;
+
+public class FuncProg {
+
+	public static void main(String[] args) {
+		//lambda: (параметры) -> {тело метода}  ||    параметры -> одно условие метода ({}не нужно)
+		
+		Map<String,BinaryOperator<Integer>> map = new HashMap<>();
+		map.put("*",(a,b)->a*b);
+		map.put("/",(a,b)->a/b);
+		map.put("-",(a,b)->a-b);
+		map.put("+",(a,b)->a+b);
+		System.out.println(map.get("*").apply(4,2));
+		System.out.println(map.get("+").apply(4,2));
+		
+
+	}
+
+}

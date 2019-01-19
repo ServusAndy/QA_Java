@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;exception&apos; to &apos;09_01_19_File_Input_Output/src&apos;&#x0A;- Original project: &apos;31_12_18_HW_Person_TreeMap&apos;&#x0A;- Destination element: &apos;09_01_19_File_Input_Output/src&apos;&#x0A;- Original element: &apos;31_12_18_HW_Person_TreeMap/src/exception&apos;" description="Copy package" destination="=09_01_19_File_Input_Output/src" element1="/src&lt;exception" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1547057688417" version="1.0"/>
+</session>

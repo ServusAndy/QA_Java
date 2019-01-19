@@ -1,0 +1,17 @@
+privet static Random ger = new Random() //datchik sluchaynich chisel
+
+Car
+
+String model
+int year
+double engine
+boolean air(condischion)
+
+*
+у нас есть Person добавить в Car как владельца 
+
+
+создать обьект машина 
+
+
+

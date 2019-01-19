@@ -1,0 +1,34 @@
+11_11_2018
+
+модификаторы доступа - visibility modifiers java:
+
+	 |      same package       |    another package
+	 |  some class  | child    | some class | child
+private	 |   не виден   | не виден | не виден   | не виден
+default	 |   виден      | виден    | не виден   | не виден
+protected|      виден   | виден    | не виден   | виден
+public   |     виден    |   виден  |   виден    | виден
+
+Колекции:
+
+ArrayList
+
+LinkedList
+
+
+HaschSet
+
+TreeSet
+
+HaschMap
+
+TreeMap
+
+HW:
+
+boolean set(T data, int i) //esli i <0 || i>size verni false
+
+** boolean addToIdex(T data, int i)
+
+* T remove(int i) // udalit s togo mesta // T = to chto udalilos pust vernetsa
+

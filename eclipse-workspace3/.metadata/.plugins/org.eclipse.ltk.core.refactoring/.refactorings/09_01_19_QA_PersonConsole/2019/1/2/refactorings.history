@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;item&apos; to &apos;09_01_19_File_Input_Output/src/(default package)&apos;&#x0A;- Original project: &apos;09_01_19_QA_PersonConsole&apos;&#x0A;- Destination element: &apos;09_01_19_File_Input_Output/src/(default package)&apos;&#x0A;- Original element: &apos;09_01_19_QA_PersonConsole/src/item&apos;" description="Copy package" destination="=09_01_19_File_Input_Output/src&lt;" element1="/src&lt;item" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1547052345913" version="1.0"/>
+</session>

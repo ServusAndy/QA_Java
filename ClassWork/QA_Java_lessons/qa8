@@ -1,0 +1,31 @@
+14_11_2018
+
+upcasting
+downcasting
+
+коллекции - Collections (JFC)
+
+HW: 
+
+1) class Person{
+String name
+int age
+double weigth
+boolean merrid(jenat?)
+}
+
+static Person getRandomPerson(){
+}
+
+
+2)
+===============Main
+
+ArrayList<Person> alp  
+
+savodim 20 random personov!
+3)
+
+filter 50<= age <=80 
+
+

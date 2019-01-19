@@ -1,0 +1,13 @@
+2_01_19
+
+TreeMap
+
+HW:
+
+1)public List<>  getAllSortedByWeight(){}
+
+2) getWeightInRange(double minWeight,double maxWeight){}
+
+
+3)** getMerried(){}            getSingle()                    ArrayList<Person>[] = new ArrayList<Person>[2]
+

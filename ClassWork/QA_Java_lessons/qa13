@@ -1,0 +1,17 @@
+02_12_18
+
+class Assertions
+
+Junit test
+
+HW:
+
+1)
+sozdat ArrayList<double>   v milion
+ ispolsovat Collection.sort i proverit test otsortirovan li;
+
+2)
+
+check nuschu filter() s Integerom;
+
+

@@ -1,0 +1,10 @@
+import java.util.function.BiFunction;
+
+public class TestFP {
+
+	public static void main(String[] args) {
+		BiFunction<Integer, Integer, Integer> sum = (a,b)->a+b;
+
+	}
+
+}

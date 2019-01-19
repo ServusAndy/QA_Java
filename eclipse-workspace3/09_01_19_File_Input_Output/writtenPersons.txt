@@ -1,0 +1,7 @@
+name: John age: 46 weight: 81.0 single
+name: Moischa age: 47 weight: 93.2 married
+name: Dascha age: 48 weight: 117.0 married
+name: Dunkan age: 49 weight: 93.5 single
+name: Pascha age: 50 weight: 90.7 single
+==============
+name: Abrascha age: 112 weight: 70.4 single

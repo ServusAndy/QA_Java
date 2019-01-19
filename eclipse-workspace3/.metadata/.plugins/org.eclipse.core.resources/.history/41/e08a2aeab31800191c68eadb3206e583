@@ -1,0 +1,206 @@
+package item;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import exception.PersonWrongDataException;
+
+public class Person implements Comparable<Person>{
+
+	private String firstName;
+	private String lastName;
+	private int year;
+	private double weight;
+	private boolean married;
+
+	public Person() {
+	}
+
+	public Person(String firstName) {
+	}
+
+	public Person(String firstName, String lastName, int year, double weight, boolean married)
+			throws PersonWrongDataException {
+		try {
+			setFirstName(firstName);
+		} catch (PersonWrongDataException e) {
+			System.out.println("FirstName column is set to default: No FirstName");
+			this.firstName = firstName;
+		}
+		try {
+			setLastName(lastName);
+		} catch (PersonWrongDataException e) {
+			System.out.println("LastName column is set to default: No LastName");
+			this.lastName = "No name";
+		}
+		try {
+			setYear(year);
+		} catch (PersonWrongDataException e) {
+			System.out.println("year is not correct (set to default)");
+			this.year = 1;
+		}
+		try {
+			setWeight(weight);
+		} catch (PersonWrongDataException e) {
+			System.out.println("Weight is not correct (set to default)");
+			this.weight = 10.;
+		}
+		try {
+			setMarried(married);
+		} catch (PersonWrongDataException e) {
+			System.out.println("can not be married because no 18 year old");
+			this.married = false;
+		}
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) throws PersonWrongDataException {
+		if (firstName == null) {
+			throw new NullPointerException("FirstName column is null");
+		} else if (firstName.length() == 0) {
+			throw new PersonWrongDataException("FirstName column is empty");
+		}
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) throws PersonWrongDataException {
+		if (lastName == null) {
+			throw new NullPointerException("LastName column is null");
+		} else if (lastName.length() == 0) {
+			throw new PersonWrongDataException("LastName column is empty");
+		}
+		this.lastName = lastName;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) throws PersonWrongDataException {
+		if (year < 1) {
+			throw new PersonWrongDataException("age less than 1: " + year);
+		} else if (year > 120) {
+			throw new PersonWrongDataException("Max limit age 120");
+		}
+		this.year = year;
+	}
+
+	public double getWeight() {
+		return weight;
+	}
+
+	public void setWeight(double weight) throws PersonWrongDataException {
+		if (weight < 10.) {
+			throw new PersonWrongDataException("weight less than 10.: " + weight);
+		} else if (weight > 135.) {
+			throw new PersonWrongDataException("Max limit of weight 135.");
+		}
+		this.weight = weight;
+	}
+
+	public boolean isMarried() {
+		return married;
+	}
+
+	public void setMarried(boolean married) throws PersonWrongDataException {
+		if (married == true && year < 18) {
+			throw new PersonWrongDataException("can not be married because no 18 year old");
+		}
+		this.married = married;
+	}
+
+	public String toString() {
+		return "FirstName: " + firstName + " LastName: " + lastName + " Year: " + year + " Weight: " + weight
+				+ " Married: " + married;
+	}
+
+	public static String getStringFromConsole() throws IOException {
+		return new BufferedReader(new InputStreamReader(System.in)).readLine();
+	}
+
+	public static int getIntFromConsole() throws IOException {
+		return Integer.parseInt(getStringFromConsole());
+	}
+
+	public static double getDoubleFromConsole() throws IOException {
+		return Double.parseDouble(getStringFromConsole());
+	}
+
+	public static boolean getBooleanFromConsole() throws IOException {
+		boolean res = false;
+		if (getStringFromConsole().equals("true")) {
+			res = true;
+		}
+		return res;
+	}
+
+	public static Person InputPerson() throws IOException, PersonWrongDataException {
+		String CLEAR_STRING = "clear";
+		String EXIT_STRING = "quit";
+		boolean flag = true;
+		Person person = new Person();
+		while (true) {
+			System.out.println("Input Person date:\n\n" + "\tfirstName\t : 'some name'\n"
+					+ "\tlastName\t : 'some family Name'\n" + "\tyear\t : '1-120'\n" + "\tweight\t : '10. - 135.'\n"
+					+ "\tmarried\t : 'true or false'\n" + "\n\t'" + EXIT_STRING + "' to quit" + "\n\t'" + CLEAR_STRING
+					+ "' to begin again" + "\n\t");
+			System.out.println("input First Name");
+			person.setFirstName(getStringFromConsole().trim());
+			break;
+		}
+		while (flag) {
+
+			System.out.println("input Last Name");
+			if(getStringFromConsole()==EXIT_STRING) {
+				flag=false;
+				break;
+			}
+			person.setLastName(getStringFromConsole().trim());
+			break;
+
+		}
+		while (flag) {
+
+			System.out.println("input year");
+			if(getStringFromConsole()==EXIT_STRING) {
+				flag=false;
+				break;
+			}
+			person.setYear(getIntFromConsole());;
+			break;
+		}
+		while (flag) {
+			System.out.println("input weight");
+			if(getStringFromConsole()==EXIT_STRING) {
+				flag=false;
+				break;
+			}
+			person.setWeight(getDoubleFromConsole());
+			break;
+		}
+		while (flag) {
+			System.out.println("input married");
+			if(getStringFromConsole()==EXIT_STRING) {
+				flag=false;
+				break;
+			}
+			person.setMarried(getBooleanFromConsole());
+			break;
+		}
+		return person;
+	}
+
+	@Override
+	public int compareTo(Person o) {
+		return Integer.compare(this.year, o.getYear());
+	}
+
+}

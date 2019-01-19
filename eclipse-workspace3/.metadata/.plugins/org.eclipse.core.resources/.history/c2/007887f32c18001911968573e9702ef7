@@ -1,0 +1,33 @@
+import java.util.function.BiFunction;
+import java.util.function.Predicate;
+
+public class TestFP {
+
+	public static void main(String[] args) {
+		BiFunction<Integer, Integer, Integer> sum = (a,b)->a+b;
+		MyInterFace sum1 = (a,b)->a+b+"";// ne na oborot, togda on tolko konkomtiniruet (a,b)-> "" + a + b;
+		
+		System.out.println(sum1.run(10, 15));
+		
+		System.out.println(isAlex().test("Vova"));
+		
+		Predicate<String> test = new Predicate<String>(){ //anonym interface
+
+			@Override
+			public boolean test(String t) {
+				
+				return "Alex".equals(t);
+			}
+		};
+		
+	}
+	
+	public static Predicate<String> isAlex(){
+		return (v)->"Alex".equals(v);
+	}
+	
+	interface MyInterFace{ //anonym interface
+		String run(int a,int b);
+	}
+
+}

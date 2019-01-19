@@ -1,0 +1,9 @@
+Immutable class
+
+HW: boolean ourConteins(String str,char c)
+
+	int ourIndexOf(String str,char c)
+
+	int countChar(String str, char c)// podschitat naprimer simvol "a" v stroke
+
+	* boolean ourEqualsImmuteCase(String str,String str1)

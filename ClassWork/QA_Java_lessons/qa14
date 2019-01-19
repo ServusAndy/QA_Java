@@ -1,0 +1,65 @@
+05_12_18
+
+LinkedList
+
+HW
+
+1)boolean set(int index,T Data);
+
+2)improve getNodeByIndex(int index);
+
+3)boolean add(int index,T data);
+
+
+	public boolean add(int index, T data) {
+		Node<T> node = new Node<T>(data);
+		if (index < 0 || index > size)
+			return false;
+		if (index == 0) {
+			addFirst(data);
+			return true;
+		}
+		if (index == size) {
+			addLast(data);
+			return true;
+		}
+		for (int i = 1; i < size; i++) {
+				if (i == index) {
+					node.setNext(getNodeByIndex(i));
+					getNodeByIndex(i).setPrev(node);
+					node.setPrev(getNodeByIndex(i).getPrev());
+					getNodeByIndex(i-1).setNext(node);
+					size++;
+				}
+			}
+		return true;
+	}
+
+
+
+
+public boolean add(int index, T data) {
+		Node<T> node = new Node<T>(data);
+		if (index < 0 || index > size)
+			return false;
+
+		for (int i = 0; i < size; i++) {
+			if (index == 0 && i == 0) {
+				addFirst(data);
+				return true;
+			}
+			if (index == size) {
+				addLast(data);
+				return true;
+			}
+			if (i == index) {
+				node.setNext(getNodeByIndex(i));
+				getNodeByIndex(i).setPrev(node);
+				node.setPrev(getNodeByIndex(i).getPrev());
+				getNodeByIndex(i - 1).setNext(node);
+				size++;
+			}
+		}
+		return true;
+	}
+

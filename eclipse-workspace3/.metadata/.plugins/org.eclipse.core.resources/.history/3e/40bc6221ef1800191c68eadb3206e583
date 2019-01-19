@@ -1,0 +1,12 @@
+package appl;
+
+import item.MyCalendar;
+
+public class CalendarApp {
+
+	public static void main(String[] args) {
+		MyCalendar.toConsole(2019);
+
+	}
+
+}

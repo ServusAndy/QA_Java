@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;WrongDataException.java&apos; to &apos;HW_Iterators_10_12_18/src/exception&apos;&#x0A;- Original project: &apos;09_12_18_QA_NumRange&apos;&#x0A;- Destination element: &apos;HW_Iterators_10_12_18/src/exception&apos;&#x0A;- Original element: &apos;model.WrongDataException.java&apos;" description="Copy compilation unit" destination="=HW_Iterators_10_12_18/src&lt;exception" element1="/src&lt;model{WrongDataException.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1544431836631" units="1" version="1.0"/>
+</session>

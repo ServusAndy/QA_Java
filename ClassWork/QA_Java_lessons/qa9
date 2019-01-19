@@ -1,0 +1,18 @@
+18_11_18
+
+Z.B : (Person person: peaple) // foreach
+
+Predicate<Person> predicate // Predicate interface
+
+
+HW: 
+
+1)zabit ArrayList<Integer>  randomno ot -1000 do 1000
+
+2)filter tolko polojitelnie
+
+3) filter min <= |num| <=max 
+
+4) |num| = a    , a*a yvlaetsa  num qvadratom 
+
+5) |num| = prostoe chislo delitsya tolko na sebya i na 1  

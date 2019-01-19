@@ -1,0 +1,15 @@
+package appl;
+
+import item.MyCalendar;
+
+public class CalendarApp {
+
+	public static void main(String[] args) {
+		
+		MyCalendar mc = new MyCalendar();
+		
+		mc.toConsole(2023);
+
+	}
+
+}

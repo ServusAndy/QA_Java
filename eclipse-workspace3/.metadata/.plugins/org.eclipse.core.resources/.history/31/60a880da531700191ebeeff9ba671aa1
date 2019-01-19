@@ -1,0 +1,42 @@
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.Month;
+import java.time.temporal.ChronoField;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		LocalDate now = LocalDate.now();
+		System.out.println(now);
+		LocalDate birthdate = LocalDate.of(1989,Month.JUNE,25);
+		System.out.println(birthdate);
+		LocalDate mySisterBirdate = LocalDate.of(1979,8,26);
+		
+		
+		LocalDate empty = LocalDate.of(0,1, 1);
+		System.out.println(empty);
+		
+		System.out.println(now.getDayOfMonth());
+		System.out.println(mySisterBirdate.getDayOfYear());
+		System.out.println(now.getMonth());
+		System.out.println(now.getMonthValue());
+		System.out.println(now.getYear());
+		
+		
+	//	System.out.println(now.getLong(ChronoField.YEAR_OF_ERA));
+		
+		birthdate = birthdate.withMonth(3);
+		birthdate = birthdate.withDayOfMonth(26);
+		System.out.println(birthdate);
+		
+		LocalTime timeNow = LocalTime.now();
+		System.out.println(timeNow);
+		
+		LocalDateTime dateTimeNow = LocalDateTime.now();
+		System.out.println(dateTimeNow);
+	}
+
+}

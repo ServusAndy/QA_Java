@@ -1,0 +1,21 @@
+import java.util.Objects;
+import java.util.function.Predicate;
+
+public class TestPhoneBook {
+
+	public static void main(String[] args) {
+		
+		PhoneBook fb = new PhoneBook();
+		
+		
+
+	}
+	
+	public static Predicate<Contact> whithName(String name){
+		return contact-> Objects.equals(name, contact.getName());
+	}
+	
+	public static Predicate<Contact> olderThen(int age){
+		return contact-> contact.getAge()>=age;
+	}
+}

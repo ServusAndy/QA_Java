@@ -1,0 +1,44 @@
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.function.Predicate;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Map<String,Integer> months = new TreeMap<>();
+		fillmap(months);
+		System.out.println(months);
+		
+//		months.values().removeIf(new Predicate<Integer>() {
+//
+//			@Override
+//			public boolean test(Integer t) {
+//				// TODO Auto-generated method stub
+//				return t%2==0;
+//			}
+//		});
+		
+//		months.values().removeIf(t-> t%2==0);
+//		System.out.println(months);
+		
+		iteratorMonthsNumbers(months);
+		
+
+	}
+
+	private static void iteratorMonthsNumbers(Map<String, Integer> months) {
+		for(Integer number: months.values()) {
+			System.out.println(number);
+		}
+		
+	}
+
+	private static void fillmap(Map<String, Integer> months) {
+		months.put("Jan", 1);
+		months.put("Feb", 2);
+		months.put("Mar", 3);
+		months.put("Apr", 4);
+		
+	}
+
+}
